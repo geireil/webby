@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA;EACI,0BAAA;EACA,UAAA","file":"main.39afc03c.css","sourceRoot":"..","sourcesContent":["h1 {\r\n    text-decoration: underline;\r\n    color: red;\r\n  }"]}

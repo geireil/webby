@@ -2,9 +2,15 @@
   "name": "webby",
   "version": "1.0.0",
   "description": "lec3",
-  "main": "test67.js",
+  "main": "webpack.common.config.js",
   "scripts": {
-    "babel": "babel main.js --presets=@babel/preset-env --out-dir lib"
+    "build-parcel": "parcel build index.html --out-dir dist/prod --target browser",
+    "lint-fix": "eslint --fix",
+    "babel": "babel main.js --presets=@babel/preset-env --out-dir lib",
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --config webpack.production.config.js",
+    "start": "webpack-dev-server --config webpack.development.config.js",
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
@@ -20,11 +26,13 @@
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.4",
+    "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/polyfill": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
+    "css-loader": "^4.3.0",
     "eslint": "^7.8.1",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-babel": "^9.0.0",
@@ -35,9 +43,20 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.1",
+    "html-webpack-plugin": "^4.4.1",
     "husky": "^4.3.0",
     "lint-staged": "^10.3.0",
-    "prettier": "^2.1.1"
+    "node-sass": "^4.14.1",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^3.2.2",
+    "prettier": "^2.1.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.4"
   },
   "browserslist": {
     "production": [
@@ -50,5 +69,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "autoprefixer": "^9.8.6",
+    "core-js": "^3.6.5"
   }
 }
