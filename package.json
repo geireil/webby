@@ -1,0 +1,54 @@
+{
+  "name": "webby",
+  "version": "1.0.0",
+  "description": "lec3",
+  "main": "test67.js",
+  "scripts": {
+    "babel": "babel main.js --presets=@babel/preset-env --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geireil/webby.git"
+  },
+  "keywords": [],
+  "author": "Geir Eilertsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geireil/webby/issues"
+  },
+  "homepage": "https://github.com/geireil/webby#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-babel": "^9.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-html": "^6.1.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
