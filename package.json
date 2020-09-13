@@ -4,7 +4,7 @@
   "description": "lec3",
   "main": "webpack.common.config.js",
   "scripts": {
-    "build-parcel": "parcel build index.html --out-dir dist/prod --target browser",
+    "build-parcel": "parcel build src/index.html --out-dir dist/prod --target browser",
     "lint-fix": "eslint --fix",
     "babel": "babel main.js --presets=@babel/preset-env --out-dir lib",
     "dev": "webpack-dev-server --open --mode development",
