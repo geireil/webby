@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta name="description" content="Webapps leksjon 2. Todo webapp">
+		<meta name="keywords" content="Todo">
+		<meta name="author" content="Geir Eilertsen">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/normalize.0a915d5e.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheet.727f2e5c.css">
+        <title>Webapps leksjon 2 - Hovedside</title>
+        <script type="text/javascript" src="/javascript.fdd706da.js" defer=""></script>
+	<script src="/normalize.0a915d5e.js"></script><script src="/stylesheet.727f2e5c.js"></script></head>
+    
+    <body>
+		<header>
+           <h1 id="logo">HIOF</h1>
+           <h1 id="user">User user</h1>
+		</header>
+		<main>
+
+            <button id="todoBtn">
+                <a><span id="bigBold">+ </span> todo</a>
+            </button>
+
+            <div id="cards">
+                
+            </div>
+ 
+
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div id="form-header">
+                        <h3 id="form-headertitle">New todo</h3>
+                        <span id="form-close" class="close">&times;</span>
+                    </div>
+                    
+                    <form id="form" onsubmit="return false">
+                        <div id="form-container">
+                            <label for="form-title">Title</label><br>
+                            <input type="text" id="form-title" name="form-title" value=""><br>
+                            <label for="form-description">Description <span id="charactersLeft">(30 characters left)</span></label><br>
+                            <input type="text" id="form-description" name="form-description" value="" maxlength="30"><br>
+                            <label for="form-author">Author</label><br>
+                            <input type="text" id="form-author" name="form-author" value=""><br><br>
+                            <input id="form-createBtn" type="submit" value="Create">
+                        </div>     
+                    </form> 
+                </div>
+              
+            </div>
+
+
+            <h3>Completed todos</h3>
+
+            <!--<p id="dateFilter">Filter by date</p>-->
+            <div id="filterWrapper">
+                <input type="checkbox" id="dateFilter" name="dateFilter" value="Date">
+                <label for="dateFilter"> Filter by date</label><br>
+            </div>
+
+            <ul id="topUl">
+                <li id="topLi"> 
+                    <span class="title">Title</span>
+                    <span class="author">Author</span>
+                    <span class="description">Description</span>
+                    <span class="completedDate">Completed Date</span>
+                </li>
+            </ul>
+            <ul id="list">
+                
+            </ul>
+
+
+        </main>
+    </body>
+    
+</html>

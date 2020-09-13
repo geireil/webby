@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: Muli;
+	color: #595959;
+	font-weight: 200;
+}
+
+header{
+	grid-column: 1/2;
+	grid-row: 1/2;
+	background: white;
+	height: auto;
+	padding:15px;
+	box-shadow:0px 4px 4px #eaeaea;
+}
+
+#logo{
+	display: inline-block;
+	width: 49.5%;
+	margin: 0px;
+	text-align: left;
+}
+
+#user{
+	display: inline-block;
+	width: 49.5%; 
+	margin: 0px;
+	text-align: right;
+}
+
+main{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	width: 70%;
+	margin: auto;
+	padding-top: 70px;
+}
+
+footer{
+	grid-column: 3/4;
+	grid-row: 1/2;
+}
+
+#todoBtn{
+	display: inline-block;
+	border: 2px solid #828282;
+	padding: 7px 46px;
+	font-size: 20px;
+}
+#todoBtn:hover{
+	background: rgb(54, 212, 191);
+}
+
+#bigBold{
+	font-size: 24px;
+	font-weight: 900;
+}
+  
+#cards{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 40px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+	display: inline-block;
+	padding: 15px;
+	height: 160px;
+	box-shadow:4px 4px 4px #eaeaea;
+}
+
+h3{
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+.cardText{
+	padding-bottom: 25px;
+	height: 70px;
+}
+
+.deleteBtn{
+	width: 30%;
+	border-radius: 4px;
+	padding: 2px 6px;
+	border: 0;
+	text-align: center;
+	color: #ffffff;
+	background: #fd4646;
+	float: right;
+}
+
+.deleteBtn:hover{
+	background: #fa8787;
+}
+
+.completeBtn{
+	margin-left: 10px;
+	width: 30%;
+	border-radius: 4px;
+	padding: 2px 6px;
+	border: 0;
+	text-align: center;
+	color: #ffffff;
+	background: rgb(54, 212, 191);
+	float: right;
+}
+
+.completeBtn:hover{
+	background: rgb(149, 227, 217);
+}
+
+#dateFilter{
+	text-align: right;
+	padding: 10px 2px;
+}
+
+#filterWrapper{
+	text-align: right;
+	padding: 10px 2px;
+	width: 100%;
+}
+
+ul{
+	width: 100%;
+	list-style-type: none;
+}
+
+ul li{
+	width: 100%;
+	border-bottom: 1px solid #cdcdcd;
+	padding: 10px 2px;
+}
+
+ul li span{
+	display:inline-block;
+	width: 19%;
+}
+
+.description{
+	width: 49%;
+}
+
+.completedDate{
+	width: 11%;
+	text-align: right;
+}
+
+#topLi{
+	background: rgb(168, 168, 168);
+}
+
+#topLi span{
+	font-weight: bold;
+}
+
+
+
+ /* The Modal (background) */
+ .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(169, 169, 169); /* Fallback color */
+	background-color: rgba(229, 229, 229, 0.771); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 0px;
+	width: 20%; /* Could be more or less, depending on screen size */
+	border-radius: 6px;
+	box-shadow: 0 0 5px rgb(222, 220, 220);
+}
+  
+/* The Close Button */
+.close {
+	color: #aaa;
+	font-size: 28px;
+	font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#form-headertitle{
+	display: inline-block;
+	width: 49%;
+	margin: 0px;
+	text-align: left;
+	font-weight: bold;
+}
+
+#form-close{
+	display: inline-block;
+	width: 49%; 
+	margin: 0px;
+	text-align: right;
+	padding-bottom: 5px;
+}
+
+#form-header{
+	border-bottom: 2px solid #dedede9c;
+	padding: 0 8px;
+	margin: 0px 0px 26px 0px;
+}
+
+#form-title{
+	margin: 4px 0px 20px 0px;
+	width: 100%;
+	padding: 4px 4px;
+}
+
+#form-description{
+	margin: 4px 0px 20px 0px;
+	width: 100%;
+	padding: 4px 4px;
+}
+
+#charactersLeft{
+	color: #919191;
+}
+
+#form-author{
+	margin: 4px 0px 20px 0px;
+	width: 100%;
+	padding: 4px 4px;
+}
+
+#form-createBtn{
+	margin: 0px 0px 40px 0px;
+	width: 100%;
+	border-radius: 1px;
+	padding: 6px 6px;
+	text-align: center;
+	color: #ffffff;
+	background: rgb(54, 212, 191);
+	border: 0;
+}
+
+#form-container{
+	margin: auto;
+	width: 80%;
+}
+
+form label{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+
+
+/*# sourceMappingURL=/stylesheet.727f2e5c.css.map */
